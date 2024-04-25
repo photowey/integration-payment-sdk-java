@@ -46,6 +46,14 @@
     <!-- @formatter:on -->
 
     <modules>
+        <module>integration-payment-sdk-alipay</module>
+        <module>integration-payment-sdk-autoconfigure</module>
+        <module>integration-payment-sdk-core</module>
+        <module>integration-payment-sdk-suixingpay</module>
+        <module>integration-payment-sdk-engine</module>
+        <module>integration-payment-sdk-unionpay</module>
+        <module>integration-payment-sdk-wechatpay</module>
+        <module>integration-payment-sdk-spring-boot-starter</module>
     </modules>
 
     <!-- @formatter:off -->
@@ -79,6 +87,26 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>io.github.photowey</groupId>
+                <artifactId>integration-payment-sdk-autoconfigure</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.photowey</groupId>
+                <artifactId>integration-payment-sdk-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.photowey</groupId>
+                <artifactId>integration-payment-sdk-engine</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.photowey</groupId>
+                <artifactId>integration-payment-sdk-spring-boot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
