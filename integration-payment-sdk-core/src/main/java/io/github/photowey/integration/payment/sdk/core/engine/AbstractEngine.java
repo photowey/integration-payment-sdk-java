@@ -22,5 +22,4 @@ package io.github.photowey.integration.payment.sdk.core.engine;
  * @version 1.0.0
  * @since 2024/04/26
  */
-public abstract class AbstractEngine {
-}
+public abstract class AbstractEngine extends io.github.photowey.spring.infras.bean.engine.AbstractEngine {}
