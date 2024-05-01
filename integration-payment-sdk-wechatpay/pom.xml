@@ -13,7 +13,39 @@
     <artifactId>integration-payment-sdk-wechatpay</artifactId>
     <packaging>pom</packaging>
 
+    <modules>
+        <module>integration-payment-sdk-wechatpay-api</module>
+        <module>integration-payment-sdk-wechatpay-autoconfigure</module>
+        <module>integration-payment-sdk-wechatpay-core</module>
+        <module>integration-wechatpay-spring-boot-starter</module>
+    </modules>
+
     <dependencies>
     </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.github.photowey</groupId>
+                <artifactId>integration-payment-sdk-wechatpay-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.photowey</groupId>
+                <artifactId>integration-payment-sdk-wechatpay-autoconfigure</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.photowey</groupId>
+                <artifactId>integration-payment-sdk-wechatpay-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.photowey</groupId>
+                <artifactId>integration-wechatpay-spring-boot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>

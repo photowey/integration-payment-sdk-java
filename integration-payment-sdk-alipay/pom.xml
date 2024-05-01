@@ -13,7 +13,39 @@
     <artifactId>integration-payment-sdk-alipay</artifactId>
     <packaging>pom</packaging>
 
+    <modules>
+        <module>integration-payment-sdk-alipay-api</module>
+        <module>integration-payment-sdk-alipay-autoconfigure</module>
+        <module>integration-payment-sdk-alipay-core</module>
+        <module>integration-alipay-spring-boot-starter</module>
+    </modules>
+
     <dependencies>
     </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.github.photowey</groupId>
+                <artifactId>integration-payment-sdk-alipay-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.photowey</groupId>
+                <artifactId>integration-payment-sdk-alipay-autoconfigure</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.photowey</groupId>
+                <artifactId>integration-payment-sdk-alipay-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.photowey</groupId>
+                <artifactId>integration-alipay-spring-boot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>
